@@ -1,0 +1,478 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="xul-bootstrap.xsl"?>
+<window title="XUL Periodic Table">
+
+  <!-- Main menu -->
+  <menubar>
+    <label value="This is a menubar" />
+    <toolbarseparator />
+    <menu label="Menu 1" >
+      <menupopup>
+        <menuitem label="Item 1" />
+        <menuitem label="Item 2" />
+        <menuitem label="Item 3" />
+      </menupopup>
+    </menu>
+    <menu label="Menu 2" >
+      <menupopup>
+        <menuitem label="Item 1" />
+        <menuitem label="Item 2" />
+        <menuitem label="Item 3" />
+      </menupopup>
+    </menu>
+    <menu label="Menu 3" >
+      <menupopup>
+        <menuitem label="Item 1" />
+        <menuitem label="Item 2" />
+        <menuitem label="Item 3" />
+      </menupopup>
+    </menu>
+  </menubar>
+
+  <description>XUL Box Layout</description>
+
+  <vbox>
+
+    <groupbox>
+
+      <caption label="flexiness" />
+
+      <hbox>
+        <button label="No Flex" />
+        <button label="No Flex" />
+        <button label="No Flex" />
+        <button label="No Flex" />
+        <button label="No Flex" />
+      </hbox>
+
+      <hbox>
+        <button label="There's a" />
+        <button label="spacer" />
+        <spacer flex="1" />
+        <button label="in the" />
+        <button label="middle." />
+      </hbox>
+
+      <hbox>
+        <button label="This spacer ->" />
+        <spacer flex="2" />
+        <button label="is bigger than this spacer, ->" />
+        <spacer flex="1" />
+        <button label="so there!" />
+      </hbox>
+
+      <hbox>
+        <button label="No Flex" />
+        <button label="No Flex" />
+        <button flex="1" label="flex=1" />
+        <button label="No Flex" />
+        <button label="No Flex" />
+      </hbox>
+
+      <hbox>
+        <button flex="1" label="flex=1" />
+        <button flex="2" label="flex=2" />
+        <button flex="3" label="flex=3" />
+        <button flex="4" label="flex=4" />
+        <button flex="5" label="flex=5" />
+      </hbox>
+
+      <hbox>
+        <button flex="1" label="flex=1" />
+        <button flex="1" label="flex=1" />
+        <button flex="1" label="flex=1" />
+        <button flex="1" label="flex=1" />
+        <button flex="1" label="flex=1" />
+      </hbox>
+
+    </groupbox>
+
+    <groupbox>
+
+      <caption label="direction" />
+
+      <hbox dir="forward">
+        <button label="Here" />
+        <button label="the" />
+        <button label="direction" />
+        <button label="is" />
+        <button label="forward" />
+      </hbox>
+
+      <hbox dir="reverse">
+        <button label="Here" />
+        <button label="the" />
+        <button label="direction" />
+        <button label="is" />
+        <button label="reverse" />
+      </hbox>
+
+      <hbox>
+        <button label="Here the" ordinal="4" />
+        <button label="ordinal" ordinal="1" />
+        <button label="attribute" ordinal="3" />
+        <button label="sets the order." ordinal="2"  />
+      </hbox>
+
+    </groupbox>
+
+    <groupbox>
+
+      <caption label="packing" />
+
+      <hbox pack="start">
+        <button label="Here" />
+        <button label="the" />
+        <button label="packing" />
+        <button label="is" />
+        <button label="start" />
+      </hbox>
+
+      <hbox pack="center">
+        <button label="Here" />
+        <button label="the" />
+        <button label="packing" />
+        <button label="is" />
+        <button label="center" />
+      </hbox>
+
+      <hbox pack="end">
+        <button label="Here" />
+        <button label="the" />
+        <button label="packing" />
+        <button label="is" />
+        <button label="end" />
+      </hbox>
+
+      <hbox pack="start">
+        <button label="Here" />
+        <button label="packing" />
+        <button label="yields" />
+        <button label="to" />
+        <button label="flex" flex="1" />
+      </hbox>
+
+  </groupbox>
+
+  <groupbox>
+
+    <caption label="alignment" />
+
+    <hbox align="start">
+      <button label="Here" image="images/betty_boop.xbm" orient="vertical" />
+      <button orient="vertical">
+        <label value="the" />
+        <label value="alignment" />
+      </button>
+      <button label="is" image="images/betty_boop.xbm" />
+      <button label="start" />
+    </hbox>
+
+    <hbox align="center">
+      <button label="Here" image="images/betty_boop.xbm" orient="vertical" />
+      <button orient="vertical">
+        <label value="the" />
+        <label value="alignment" />
+      </button>
+      <button label="is"  image="images/betty_boop.xbm" />
+      <button label="center" />
+    </hbox>
+
+    <hbox align="end">
+      <button label="Here" image="images/betty_boop.xbm" orient="vertical" />
+      <button orient="vertical">
+        <label value="the" />
+        <label value="alignment" />
+      </button>
+      <button label="is" image="images/betty_boop.xbm" />
+      <button label="end" />
+    </hbox>
+
+    <hbox align="baseline">
+      <button label="Here" image="images/betty_boop.xbm" orient="vertical" />
+      <button orient="vertical">
+        <label value="the" />
+        <label value="alignment" />
+      </button>
+      <button label="is" image="images/betty_boop.xbm" />
+      <button label="baseline" />
+    </hbox>
+
+    <hbox align="stretch">
+      <button label="Here" image="images/betty_boop.xbm" orient="vertical" />
+      <button orient="vertical">
+        <label value="the" />
+        <label value="alignment" />
+      </button>
+      <button label="is" image="images/betty_boop.xbm" />
+      <button label="stretch" />
+    </hbox>
+
+  </groupbox>
+
+  <groupbox orient="horizontal">
+
+    <caption label="equality" />
+
+    <vbox equalsize="always">
+      <button label="Here" image="images/betty_boop.xbm" orient="vertical" />
+      <button orient="vertical">
+        <label value="the" />
+        <label value="equalsize" />
+        <label value="attribute" />
+      </button>
+      <button label="is" image="images/betty_boop.xbm" />
+      <button label="always" />
+    </vbox>
+
+    <vbox equalsize="never">
+      <button label="Here" image="images/betty_boop.xbm" orient="vertical" />
+      <button orient="vertical">
+        <label value="the" />
+        <label value="equalsize" />
+        <label value="attribute" />
+      </button>
+      <button label="is" image="images/betty_boop.xbm" />
+      <button label="never" />
+    </vbox>
+
+ </groupbox>
+
+</vbox>
+
+<description>XUL Buttons</description>
+
+<vbox>
+ <groupbox>
+  <caption label="hiddeness" />
+  <hbox>
+    <label value="Every other button in the line below is hidden" />
+  </hbox>
+  <hbox>
+    <button label="Every" />
+    <button label="other" hidden="true" />
+    <button label="button" />
+    <button label="in" hidden="true" />
+    <button label="the" />
+    <button label="line" hidden="true" />
+    <button label="below" />
+    <button label="is" hidden="true" />
+    <button label="hidden" />
+  </hbox>
+ </groupbox>
+
+</vbox>
+
+<vbox>
+
+ <hbox>
+ <groupbox flex="1">
+  <caption label="These show different states." />
+  <hbox>
+    <button  flex="1" label="Default"  default="true" />
+    <button  flex="1" label="Checked"  checked="true" />
+    <button  flex="1" label="Normal"   />
+    <button  flex="1" label="Disabled" disabled="true" />
+  </hbox>
+  <hbox pack="center">
+    <description  id="state-text" value="(no input yet)" />
+  </hbox>
+ </groupbox>
+
+ <groupbox flex="1">
+   <caption label="These are menubuttons." />
+   <hbox>
+     <button flex="1" type="menu" label="Menu">
+       <menupopup>
+         <menuitem label="Option 1" />
+         <menuitem label="Option 2" />
+         <menuitem label="Option 3" />
+         <menuitem label="Option 4" />
+       </menupopup>
+     </button>
+     <button flex="1" type="menu-button" label="MenuButton">
+       <menupopup>
+         <menuitem label="Option A" />
+         <menuitem label="Option B" />
+         <menuitem label="Option C" />
+         <menuitem label="Option D" />
+       </menupopup>
+     </button>
+   </hbox>
+   <hbox pack="center">
+     <description  id="menu-text" value="(no input yet)" />
+   </hbox>
+ </groupbox>
+ </hbox>
+
+ <groupbox>
+  <caption label="These buttons show different labeling." />
+  <hbox pack="center"> 
+  <vbox> 
+    <button flex="1" label="No Image" />
+    <button label="Left" image="images/betty_boop.xbm" />
+    <button label="Right" image="images/betty_boop.xbm" dir="reverse" />
+  </vbox>
+  <vbox> 
+    <button label="Above" image="images/betty_boop.xbm" 
+            orient="vertical" dir="forward" />
+    <button label="Below" image="images/betty_boop.xbm" 
+            orient="vertical" dir="reverse" />
+  </vbox>
+  <vbox> 
+    <button flex="1" />
+    <button image="images/betty_boop.xbm" />
+    <button>
+      <label width="50">Wrapped Label</label>
+    </button>
+  </vbox>
+  <vbox> 
+    <button flex="1" orient="vertical">
+      <label value="This" />
+      <label value="is" />
+      <label value="a" />
+      <label value="button" />
+    </button>
+  </vbox>
+  </hbox> 
+  <hbox pack="center">
+    <description  id="label-text" value="(no input yet)" />
+  </hbox>
+ </groupbox>
+
+</vbox>
+
+<!--vbox>
+<hbox>
+ <groupbox>
+  <caption label="tabbing" />
+  <vbox>
+    <description value="These tab oddly" />
+    <checkbox flex="1" label="6" tabindex="6" />
+    <checkbox flex="1" label="3" tabindex="3" />
+    <checkbox flex="1" label="4" tabindex="4" />
+    <checkbox flex="1" label="2" tabindex="2" />
+    <checkbox flex="1" label="5" tabindex="5" />
+    <checkbox flex="1" label="1" tabindex="1" />
+    <separator flex="1" />
+    <description  id="tab-text" value="(no input)" />
+  </vbox>
+ </groupbox>
+
+ <groupbox>
+  <caption label="accesskeys" />
+  <vbox>
+    <description value="These have access keys." />
+    <description value="(Even if they're not marked)" />
+    <checkbox flex="1" label="Animal" accesskey="A" />
+    <checkbox flex="1" label="Bear"   accesskey="B" />
+    <checkbox flex="1" label="Cat"    accesskey="C" />
+    <checkbox flex="1" label="Dog"    accesskey="D"  />
+    <checkbox flex="1" label="Deer"   accesskey="E" />
+    <checkbox flex="1" label="Fish"   accesskey="F" />
+    <separator flex="1" />
+    <description  id="accesskey-text" value="(no input)" />
+  </vbox>
+ </groupbox>
+
+ <groupbox>
+  <caption label="states" />
+  <vbox flex="1">
+    <description  value="These show states." />
+    <checkbox  flex="1" label="Default"  default="true" 
+                      oncommand="setText('state-text','Default');" />
+    <checkbox  flex="1" label="Checked"  checked="true" 
+                      oncommand="setText('state-text','Checked');" />
+    <checkbox  flex="1" label="Normal"   
+                      oncommand="setText('state-text','Normal');" />
+    <checkbox  flex="1" label="Disabled" disabled="true" 
+                      oncommand="setText('state-text','Disabled');" />
+    <separator flex="1" />
+    <description  id="state-text" value="(no input)" />
+  </vbox>
+ </groupbox>
+</hbox>
+
+<hbox >
+ <groupbox>
+  <caption label="orientation" />
+  <vbox>
+    <description  value="These show different orientation." />
+    <checkbox label="Left" />
+    <checkbox label="Right" dir="reverse" />
+    <checkbox label="Above" orient="vertical" dir="forward" />
+    <checkbox label="Below" orient="vertical" dir="reverse" />
+    <separator flex="1" />
+    <description  id="label-text" value="(no input)" />
+  </vbox> 
+ </groupbox>
+
+ <groupbox>
+  <caption label="images" />
+  <vbox>
+    <description  value="These have images." />
+    <checkbox label="Left"  
+              src="images/betty_boop.xbm" />
+    <checkbox label="Right" dir="reverse"  
+              src="images/betty_boop.xbm" />
+    <checkbox label="Above" orient="vertical" dir="forward"  
+              src="images/betty_boop.xbm" />
+    <checkbox label="Below" orient="vertical" dir="reverse" 
+              src="images/betty_boop.xbm" />
+    <checkbox 
+              src="images/betty_boop.xbm" />
+    <checkbox
+              src="images/betty_boop.xbm" />
+    <separator flex="1" />
+    <description  id="image-text" value="(no input)" />
+  </vbox> 
+ </groupbox>
+</hbox>
+
+</vbox-->
+
+  <vbox>
+    <hbox>
+      <groupbox>
+        <caption label="determined" />
+        <description>Barre de progression dont la progression est de 10%</description>
+        <progressmeter mode="determined" value="10" />
+      </groupbox>
+      <groupbox>
+        <caption label="undetermined" />
+        <description>Barre de progression dont la progression est inconnue</description>
+        <progressmeter mode="undetermined" />
+      </groupbox>
+    </hbox>
+  </vbox>
+
+  <description>XUL Tabs</description>
+
+  <vbox>
+    <groupbox>
+      <description>This is the standard tabbox. It looks fine.</description>
+      <groupbox>
+        <tabbox>
+          <tabs>
+            <tab label="Default" />
+            <tab label="Tab" />
+            <tab label="Orientation" />
+          </tabs>
+          <tabpanels>
+            <label value="Default default default default default default default default default default default default default default default default default default default" />    
+            <label value="Tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab tab" />        
+            <label value="Orientation orientation orientation orientation orientation orientation orientation orientation orientation orientation orientation orientation orientation orientation orientation orientation orientation orientation orientation orientation orientation orientation orientation" />
+          </tabpanels>
+        </tabbox>
+      </groupbox>
+    </groupbox>
+  </vbox>
+
+  <statusbar>
+    <statusbarpanel label="This is a statusbarpanel." />
+    <statusbarpanel label="As is this." />
+    <statusbarpanel label="And also this...." />
+    <statusbarpanel label="Click Me!" />
+  </statusbar>
+
+</window>
