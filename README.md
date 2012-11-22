@@ -1,5 +1,5 @@
-XULStrap
-========
+XULStrap (alpha)
+================
 
 XULStrap is just a single XSLT file to translate some XUL semantics into HTML ones based on Twitter Bootstrap.
 
