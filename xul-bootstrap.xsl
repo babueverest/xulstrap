@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-    XUL-to-HTML is a single XSLT file designed to translate some XUL elements into HTML ones
+    XUL-Bootstrap is a single XSLT file designed to translate some XUL elements into HTML ones, using Twitter Bootstrap graphical components
     Copyright (C) 2012 Charles-Edouard Coste
 
     This program is free software: you can redistribute it and/or modify
@@ -23,24 +23,31 @@
   <html>
     <head>
       <title><xsl:value-of select="@title" /></title>
-      <link href="css/bootstrap.min.css" rel="stylesheet" />
-      <link href="css/docs.css" rel="stylesheet" />
-      <script src="http://code.jquery.com/jquery-latest.js"></script>
-      <script src="js/bootstrap.min.js"></script>
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
       <style type="text/css">
+
+        body {
+          padding-bottom: 40px;
+          padding-top: 60px;
+        }
+
         .row {
           margin-bottom : 20px;
         }
       </style>
     </head>
     <body>
+      <xsl:apply-templates select="menubar" />
       <div class="container">
-        <xsl:apply-templates />
+        <xsl:apply-templates select="*[.!=preceding-sibling::menubar]" />
       </div>
     </body>
   </html>
 </xsl:template>
 
+<!-- Template for status bars -->
 <xsl:template match="statusbar">
 <div class="navbar navbar-fixed-bottom">
   <div class="navbar-inner">
@@ -53,6 +60,7 @@
 </div>
 </xsl:template>
 
+<!-- Template for main menu bars (attached to the window) -->
 <xsl:template match="window/menubar">
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
@@ -65,6 +73,7 @@
 </div>
 </xsl:template>
 
+<!-- Template for any menu bar (may be found anywhere in the page/screen) -->
 <xsl:template match="menubar">
 <div class="navbar">
   <div class="navbar-inner">
@@ -77,12 +86,15 @@
 </div>
 </xsl:template>
 
+<!-- Toolbar separator for menu bars -->
 <xsl:template match="menubar/toolbarseparator">
-<li class="divider-vertical"></li>
+  <li class="divider-vertical"></li>
 </xsl:template>
 
 <xsl:template match="menubar/label">
-<li class="disabled"><a href="#"><xsl:value-of select="@value" /></a></li>
+  <li class="disabled">
+    <a href="#"><xsl:value-of select="@value" /></a>
+  </li>
 </xsl:template>
 
 <xsl:template match="statusbar/statusbarpanel">
