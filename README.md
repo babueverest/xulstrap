@@ -7,7 +7,7 @@ Why do I need XULStrap?
 -----------------------
 
 Twitter Bootstrap makes easy to develop HTML layouts, with nice buttons, forms, and so one...
-But problem is that HTML *IS NOT* a GUI language
+But problem is that HTML **IS NOT** a GUI language
 
 For instance, if you want to add a navigation bar to your web page with Twitter Bootstrap, you need to write:
 
@@ -19,7 +19,7 @@ For instance, if you want to add a navigation bar to your web page with Twitter 
       </div>
     </div>
 
-It's resulting in a nice toolbar but why so much code? Because... HTML *IS NOT* a GUI language
+It's resulting in a nice toolbar but why so much code? Because... HTML **IS NOT** a GUI language
 
 Now, let's see a bit of XUL code :
 
@@ -27,7 +27,7 @@ Now, let's see a bit of XUL code :
       ...
     </menubar>
 
-See? There is really few lines of code! Why? Because... XUL *IS* a GUI language
+See? There is really few lines of code! Why? Because... XUL **IS** a GUI language
 
 How does it work?
 -----------------
